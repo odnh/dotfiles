@@ -1,11 +1,8 @@
-# To use nix, and its installs
-#. /Users/oliver/.nix-profile/etc/profile.d/nix.sh
-
 # Prompt
 export PS1="\h:\W \u\$ "
 
 # Local bin
-export PATH=~/bin:/usr/local/bin:/Library/TeX/texbin:$PATH
+export PATH=~/bin:~/.cabal/bin:/usr/local/bin:/Library/TeX/texbin:$PATH
 
 # Aliases
 alias ls='ls -GFph'
@@ -24,4 +21,4 @@ alias gpu='git push'
 export EDITOR=nvim
 
 # opam configuration
-test -r ~/.opam/opam-init/init.sh && . ~/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
+test -r /Users/oliver/.opam/opam-init/init.sh && . /Users/oliver/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
